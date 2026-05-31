@@ -9,31 +9,26 @@ public class GameManager : MonoBehaviour
     int n;
     bool gameFinished = false;
 
-    void Awake() 
-    {
+    void Awake() {
         instance = this;
     }
     
-    public void CompareOperator(char input) 
-    {
+    public void CompareOperator(char input) {
         if (n >= levelEquations.Count) return;
 
-        if(input == levelEquations[n].correctOperator)
-        {
+        if(input == levelEquations[n].correctOperator) {
             Debug.Log($"indeks ke : {n} udah bener");
             LevelUIManager.instance.UpdateOperatorUI(n, input);
             n++; 
         }
-        else
-        {
+        else {
             Debug.Log("Salah, gak dapet ayam malay");
+            // logika lose entar disini
         }
     }
 
-    void Update()
-    {
-        if (n >= levelEquations.Count && levelEquations.Count > 0 && !gameFinished)
-        {
+    void Update() {
+        if (n >= levelEquations.Count && levelEquations.Count > 0 && !gameFinished) {
             gameFinished = true;
             Debug.Log("Ayam Malay");
         }
