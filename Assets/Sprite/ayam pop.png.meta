@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ayam pop_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825c1c7cbe0de5e46825aab8b160f70c
+      internalID: 1661002518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ayam pop_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1
+        width: 20
+        height: 19
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bad73b88c1c9d458137d08d8159937
+      internalID: -1170924675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ayam pop_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 19
+        height: 20
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27407c65a96b65941b0cdd432d351460
+      internalID: -1345620865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ayam pop_3
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 0
+        width: 20
+        height: 20
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0dfc8a58a1b054d9cea801e2d1a8d8
+      internalID: 1157394590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ayam pop_4
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0
+        width: 20
+        height: 20
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48a40ff5e3460f46864432855055056
+      internalID: -1018191896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +211,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ayam pop_0: 1661002518
+      ayam pop_1: -1170924675
+      ayam pop_2: -1345620865
+      ayam pop_3: 1157394590
+      ayam pop_4: -1018191896
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
