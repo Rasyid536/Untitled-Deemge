@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c2cd85a5d24d39e4fb8268d7d3d77ee1
+guid: 2cbb8fe66b4905e46a4ed906ac6e8dbf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,10 +45,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,106 +97,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ayam pop_0
+      name: berakin lagi_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 19
-        height: 19
+        y: 150
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 825c1c7cbe0de5e46825aab8b160f70c
-      internalID: 1661002518
+      spriteID: bbe39eedf7d1ea54ab38fbe0dd9f720a
+      internalID: 355795247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ayam pop_1
+      name: berakin lagi_1
       rect:
         serializedVersion: 2
-        x: 19
-        y: 1
-        width: 20
-        height: 19
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 30
+        y: 150
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50bad73b88c1c9d458137d08d8159937
-      internalID: -1170924675
+      spriteID: 141cd4f58de48a141ad1919c0b735665
+      internalID: -1535658048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ayam pop_2
+      name: berakin lagi_2
       rect:
         serializedVersion: 2
-        x: 39
-        y: 0
-        width: 19
-        height: 20
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 60
+        y: 150
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27407c65a96b65941b0cdd432d351460
-      internalID: -1345620865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ayam pop_3
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 0
-        width: 20
-        height: 20
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f0dfc8a58a1b054d9cea801e2d1a8d8
-      internalID: 1157394590
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ayam pop_4
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 0
-        width: 20
-        height: 20
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e48a40ff5e3460f46864432855055056
-      internalID: -1018191896
+      spriteID: a4936c1935abefa4ea24dcc28efa4149
+      internalID: 898734336
       vertices: []
       indices: 
       edges: []
@@ -212,11 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ayam pop_0: 1661002518
-      ayam pop_1: -1170924675
-      ayam pop_2: -1345620865
-      ayam pop_3: 1157394590
-      ayam pop_4: -1018191896
+      berakin lagi_0: 355795247
+      berakin lagi_1: -1535658048
+      berakin lagi_2: 898734336
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

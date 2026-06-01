@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c2cd85a5d24d39e4fb8268d7d3d77ee1
+guid: 814995da94c19f741bd36523df47de4d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,8 +48,8 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 6, y: 151, z: 296, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -84,7 +84,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 12
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -97,106 +97,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ayam pop_0
+      name: berakin_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1
-        width: 19
-        height: 19
+        x: 6
+        y: 156
+        width: 17
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 825c1c7cbe0de5e46825aab8b160f70c
-      internalID: 1661002518
+      spriteID: 39137b0afc1b47442b7c8fa563f4428e
+      internalID: -1489434796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ayam pop_1
+      name: berakin_1
       rect:
         serializedVersion: 2
-        x: 19
-        y: 1
-        width: 20
-        height: 19
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 31
+        y: 151
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50bad73b88c1c9d458137d08d8159937
-      internalID: -1170924675
+      spriteID: 4bfc28228903899489366f52530778ff
+      internalID: 301759793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ayam pop_2
+      name: berakin_2
       rect:
         serializedVersion: 2
-        x: 39
-        y: 0
-        width: 19
-        height: 20
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 61
+        y: 151
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27407c65a96b65941b0cdd432d351460
-      internalID: -1345620865
+      spriteID: 0f943a28ce6f2b64bad3aebf859a40f8
+      internalID: 1637370627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ayam pop_3
+      name: berakin_3
       rect:
         serializedVersion: 2
-        x: 59
-        y: 0
-        width: 20
-        height: 20
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 90
+        y: 151
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f0dfc8a58a1b054d9cea801e2d1a8d8
-      internalID: 1157394590
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ayam pop_4
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 0
-        width: 20
-        height: 20
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e48a40ff5e3460f46864432855055056
-      internalID: -1018191896
+      spriteID: 96c61e3af763ce5468792b95d2483ed9
+      internalID: 1588227065
       vertices: []
       indices: 
       edges: []
@@ -205,18 +184,17 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ayam pop_0: 1661002518
-      ayam pop_1: -1170924675
-      ayam pop_2: -1345620865
-      ayam pop_3: 1157394590
-      ayam pop_4: -1018191896
+      berakin_0: -1489434796
+      berakin_1: 301759793
+      berakin_2: 1637370627
+      berakin_3: 1588227065
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

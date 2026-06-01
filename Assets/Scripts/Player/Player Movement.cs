@@ -7,11 +7,16 @@ public class PlayerMovement : MonoBehaviour {
     private float speed = 8f;
     private float jumpingPower = 16f;
     private bool isFacingRight = true;
+    public static PlayerMovement instance;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Animator animator;
+
+    void Awake() {
+        instance = this;
+    }
 
     void Update() {
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -33,7 +38,7 @@ public class PlayerMovement : MonoBehaviour {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
 
-    private bool IsGrounded() {
+    public bool IsGrounded() {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
@@ -44,5 +49,31 @@ public class PlayerMovement : MonoBehaviour {
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
+    }
+
+    public void DeadAnim() {
+        rb.velocity = Vector2.zero;
+        StartCoroutine(WaitAnimationDone());
+    }
+
+    private IEnumerator WaitAnimationDone() {
+        animator.Play("dead");
+
+        yield return null;
+
+        // 1. Tunggu sampai animasi jalan setengah (0.5f = 50%)
+        while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 0.5f) {
+            yield return null;
+        }
+
+        // Matikan script player tepat di tengah-tengah animasi
+        this.enabled = false;
+
+        // 2. Lanjut tunggu sisa animasinya sampai benar-benar selesai (1.0f = 100%)
+        while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f) {
+            yield return null;
+        }
+        
+        GameManager.instance.LoseUI.SetActive(true); 
     }
 }
