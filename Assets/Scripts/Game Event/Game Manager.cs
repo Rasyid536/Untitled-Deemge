@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
             PlayerMovement.instance.DeadAnim();
 
         if (gameFinished) {
-            // LoadNextLevel();
+            LoadNextLevel();
         }
     }
 

@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("IsGrounded", IsGrounded());
 
         Flip();
+        KeepInBounds();
     }
 
     private void FixedUpdate()
@@ -104,5 +105,24 @@ public class PlayerMovement : MonoBehaviour
         }
 
         GameManager.instance.LoseUI.SetActive(true);
+    }
+
+    private void KeepInBounds()
+    {
+        // 1. Ambil posisi kamera dalam koordinat dunia
+        Vector3 viewPos = transform.position;
+
+        // 2. Konversi posisi karakter ke Viewport Space (0 sampai 1)
+        Vector3 viewportPos = Camera.main.WorldToViewportPoint(viewPos);
+
+        // 3. Clamp (jepit) nilainya antara 0.03 dan 0.97 supaya tidak terlalu mepet ke ujung
+        viewportPos.x = Mathf.Clamp(viewportPos.x, 0.03f, 0.97f);
+        viewportPos.y = Mathf.Clamp(viewportPos.y, 0.03f, 0.97f);
+
+        // 4. Kembalikan koordinat viewport yang sudah dijepit ke koordinat dunia
+        Vector3 worldPos = Camera.main.ViewportToWorldPoint(viewportPos);
+        
+        // 5. Terapkan posisi baru ke karakter (Z tetap)
+        transform.position = new Vector3(worldPos.x, worldPos.y, transform.position.z);
     }
 }
