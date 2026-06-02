@@ -6,7 +6,7 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private float timeRemaining = 10f;
-    
+
     private bool timerIsRunning = false;
 
     void Start()
@@ -20,11 +20,13 @@ public class Timer : MonoBehaviour
     {
         while (timerIsRunning && timeRemaining > 0)
         {
-            // Update teks setiap frame
+            if (PlayerMovement.instance != null && PlayerMovement.instance.IsMoving())
+            {
+                timeRemaining -= Time.deltaTime;
+            }
+
+            timeRemaining = Mathf.Max(timeRemaining, 0f);
             DisplayTime(timeRemaining);
-            
-            // Kurangi waktu berdasarkan waktu nyata (detik)
-            timeRemaining -= Time.deltaTime;
             yield return null;
         }
 
@@ -34,7 +36,7 @@ public class Timer : MonoBehaviour
             timeRemaining = 0;
             DisplayTime(timeRemaining);
             timerIsRunning = false;
-            
+
             // Panggil fungsi mati dari PlayerMovement
             if (PlayerMovement.instance != null)
             {

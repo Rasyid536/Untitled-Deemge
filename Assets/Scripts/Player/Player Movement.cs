@@ -53,6 +53,11 @@ public class PlayerMovement : MonoBehaviour
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
+    public bool IsMoving()
+    {
+        return Mathf.Abs(rb.velocity.x) > 0.01f;
+    }
+
     private void Flip()
     {
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
@@ -121,7 +126,7 @@ public class PlayerMovement : MonoBehaviour
 
         // 4. Kembalikan koordinat viewport yang sudah dijepit ke koordinat dunia
         Vector3 worldPos = Camera.main.ViewportToWorldPoint(viewportPos);
-        
+
         // 5. Terapkan posisi baru ke karakter (Z tetap)
         transform.position = new Vector3(worldPos.x, worldPos.y, transform.position.z);
     }
