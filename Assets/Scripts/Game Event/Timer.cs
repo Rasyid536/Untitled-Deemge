@@ -8,19 +8,26 @@ public class Timer : MonoBehaviour
     [SerializeField] private float timeRemaining = 10f;
 
     private bool timerIsRunning = false;
+    private bool timerStarted = false;
 
     void Start()
     {
-        // Mulai timer saat game dimulai
-        timerIsRunning = true;
+        // Tampilkan nilai awal, timer belum berjalan sampai player mulai bergerak
+        DisplayTime(timeRemaining);
         StartCoroutine(StartTimer());
     }
 
     private IEnumerator StartTimer()
     {
-        while (timerIsRunning && timeRemaining > 0)
+        while (timeRemaining > 0)
         {
-            if (PlayerMovement.instance != null && PlayerMovement.instance.IsMoving())
+            if (!timerStarted && PlayerMovement.instance != null && PlayerMovement.instance.IsMoving())
+            {
+                timerStarted = true;
+                timerIsRunning = true;
+            }
+
+            if (timerIsRunning)
             {
                 timeRemaining -= Time.deltaTime;
             }
